@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Collage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffd6e8;
+      color: #b30073;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 55px;
+      color: #ff5fa2;
+      margin-top: 30px;
+    }
+
+    .collage {
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      padding-bottom: 2000px;
+    }
+
+    .collage img {
+      width: 180px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+      position: absolute;
+      transform: rotate(calc(-10deg + 20deg * var(--r)));
+      transition: 0.3s;
+    }
+
+    .collage img:hover {
+      transform: scale(1.1) rotate(0deg);
+      z-index: 10;
+    }
+
+    /* Ordered positions */
+    .i1 { top: 20px; left: 15%; --r: 0.2; }
+    .i2 { top: 140px; left: 55%; --r: 0.8; }
+    .i3 { top: 260px; left: 5%; --r: 0.4; }
+    .i4 { top: 380px; left: 45%; --r: 0.1; }
+    .i5 { top: 500px; left: 22%; --r: 0.7; }
+    .i6 { top: 630px; left: 60%; --r: 0.3; }
+
+    .i7 { top: 760px; left: 10%; --r: 0.2; }
+    .i8 { top: 880px; left: 55%; --r: 0.6; }
+    .i9 { top: 1000px; left: 25%; --r: 0.4; }
+    .i10 { top: 1120px; left: 65%; --r: 0.1; }
+    .i11 { top: 1240px; left: 12%; --r: 0.7; }
+    .i12 { top: 1360px; left: 50%; --r: 0.3; }
+    .i13 { top: 1480px; left: 30%; --r: 0.8; }
+    .i14 { top: 1600px; left: 60%; --r: 0.5; }
+    .i15 { top: 1720px; left: 18%; --r: 0.2; }
+    .i16 { top: 1840px; left: 48%; --r: 0.6; }
+
+    @media (max-width: 600px) {
+      .collage img {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎀 Cute Kamilah Gallery 🎀</h1>
+
+  <div class="collage">
+    <img src="1.jpg" class="i1">
+    <img src="2.jpg" class="i2">
+    <img src="3.jpg" class="i3">
+    <img src="4.jpg" class="i4">
+    <img src="5.jpg" class="i5">
+    <img src="6.jpg" class="i6">
+    <img src="7.jpg" class="i7">
+    <img src="8.jpg" class="i8">
+    <img src="9.jpg" class="i9">
+    <img src="10.jpg" class="i10">
+    <img src="11.jpg" class="i11">
+    <img src="12.jpg" class="i12">
+    <img src="13.jpg" class="i13">
+    <img src="14.jpg" class="i14">
+    <img src="15.jpg" class="i15">
+    <img src="16.jpg" class="i16">
+  </div>
+
+</body>
+</html>
